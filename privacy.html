@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — GoddessGrounded</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream: #faf7f2;
+      --warm: #f2ece0;
+      --earth: #8b6f47;
+      --earth-light: #b89468;
+      --earth-dark: #5c4a30;
+      --bark: #3d2f1e;
+      --muted: #9e8e7a;
+      --text: #2c1f0e;
+      --border: #e2d8cc;
+      --card: #ffffff;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--cream);
+      color: var(--text);
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    header {
+      background: var(--bark);
+      padding: 28px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 300;
+      color: var(--earth-light);
+      letter-spacing: 0.12em;
+      text-decoration: none;
+    }
+
+    .logo span {
+      color: rgba(255,255,255,0.4);
+      font-size: 13px;
+      font-family: 'Jost', sans-serif;
+      letter-spacing: 0.05em;
+      margin-left: 16px;
+      font-weight: 300;
+    }
+
+    .hero {
+      background: var(--bark);
+      padding: 60px 40px 50px;
+      text-align: center;
+      border-bottom: 1px solid rgba(139,111,71,0.25);
+    }
+
+    .hero-label {
+      font-family: 'Jost', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--earth-light);
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(36px, 5vw, 52px);
+      font-weight: 300;
+      color: var(--cream);
+      letter-spacing: 0.02em;
+      margin-bottom: 16px;
+    }
+
+    .hero-meta {
+      font-size: 13px;
+      color: rgba(255,255,255,0.4);
+      letter-spacing: 0.05em;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 64px 40px 100px;
+    }
+
+    .toc {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--earth);
+      padding: 28px 32px;
+      margin-bottom: 56px;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .toc-title {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--earth-dark);
+      margin-bottom: 16px;
+    }
+
+    .toc ol {
+      list-style: none;
+      counter-reset: toc;
+      columns: 2;
+      gap: 0 32px;
+    }
+
+    @media (max-width: 560px) { .toc ol { columns: 1; } }
+
+    .toc li {
+      counter-increment: toc;
+      margin-bottom: 8px;
+      font-size: 13.5px;
+    }
+
+    .toc li a {
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .toc li a:hover { color: var(--earth-dark); }
+
+    section {
+      margin-bottom: 52px;
+      padding-top: 8px;
+    }
+
+    section + section {
+      border-top: 1px solid var(--border);
+      padding-top: 52px;
+    }
+
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 26px;
+      font-weight: 400;
+      color: var(--text);
+      margin-bottom: 20px;
+      letter-spacing: 0.01em;
+    }
+
+    h2 .section-num {
+      color: var(--earth);
+      font-style: italic;
+      margin-right: 10px;
+    }
+
+    h3 {
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--earth-dark);
+      margin: 28px 0 12px;
+    }
+
+    p { margin-bottom: 16px; color: #3a3530; }
+    p:last-child { margin-bottom: 0; }
+
+    strong { font-weight: 500; color: var(--text); }
+
+    ul, ol {
+      margin: 12px 0 16px 20px;
+      color: #3a3530;
+    }
+
+    li { margin-bottom: 6px; }
+
+    a { color: var(--earth-dark); }
+    a:hover { color: var(--earth); }
+
+    .highlight {
+      background: var(--card);
+      border-left: 3px solid var(--earth);
+      padding: 18px 22px;
+      margin: 20px 0;
+      font-size: 14.5px;
+      color: var(--muted);
+      border-radius: 0 4px 4px 0;
+    }
+
+    .future-highlight {
+      background: rgba(139,111,71,0.06);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--earth-light);
+      padding: 18px 22px;
+      margin: 20px 0;
+      font-size: 14.5px;
+      color: var(--muted);
+      border-radius: 0 4px 4px 0;
+    }
+
+    .future-highlight strong {
+      color: var(--earth-dark);
+      display: block;
+      margin-bottom: 8px;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .table-wrap { overflow-x: auto; margin: 20px 0; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    thead th {
+      background: var(--bark);
+      color: var(--earth-light);
+      font-weight: 400;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 12px 16px;
+      text-align: left;
+    }
+
+    tbody tr { border-bottom: 1px solid var(--border); }
+    tbody tr:last-child { border-bottom: none; }
+    tbody tr:nth-child(even) { background: rgba(255,255,255,0.6); }
+
+    td {
+      padding: 12px 16px;
+      color: #3a3530;
+      vertical-align: top;
+    }
+
+    td:first-child { font-weight: 400; color: var(--text); white-space: nowrap; }
+
+    .rights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+      margin: 20px 0;
+    }
+
+    .right-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 18px 20px;
+      border-radius: 4px;
+    }
+
+    .right-card .right-title {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--earth-dark);
+      margin-bottom: 8px;
+    }
+
+    .right-card p {
+      font-size: 13.5px;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .intl-section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 24px 28px;
+      margin-bottom: 20px;
+    }
+
+    .intl-section h3 {
+      margin-top: 0;
+      color: var(--text);
+      font-size: 14px;
+      letter-spacing: 0.08em;
+    }
+
+    .intl-flag {
+      font-size: 20px;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    .contact-block {
+      background: var(--bark);
+      color: var(--cream);
+      padding: 36px 40px;
+      border-radius: 4px;
+      margin-top: 40px;
+    }
+
+    .contact-block h3 {
+      color: var(--earth-light);
+      margin-top: 0;
+      margin-bottom: 16px;
+      font-size: 12px;
+      letter-spacing: 0.18em;
+    }
+
+    .contact-block p { color: rgba(250,247,242,0.7); margin-bottom: 8px; }
+    .contact-block a { color: var(--earth-light); text-decoration: none; }
+    .contact-block a:hover { color: var(--cream); }
+
+    .sister-note {
+      background: var(--warm);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 20px 24px;
+      margin: 20px 0;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .sister-note strong { color: var(--earth-dark); }
+
+    footer {
+      background: var(--bark);
+      padding: 28px 40px;
+      text-align: center;
+      font-size: 12px;
+      color: rgba(250,247,242,0.35);
+      letter-spacing: 0.06em;
+    }
+
+    footer a { color: var(--earth-light); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      header, .hero { padding-left: 24px; padding-right: 24px; }
+      .container { padding: 48px 24px 80px; }
+      .contact-block { padding: 28px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="https://goddessgrounded.app" class="logo">GoddessGrounded <span>goddessgrounded.app</span></a>
+</header>
+
+<div class="hero">
+  <div class="hero-label">Legal information</div>
+  <h1>Privacy Policy</h1>
+  <div class="hero-meta">Version 1.0 &nbsp;·&nbsp; Last updated: May 2026 &nbsp;·&nbsp; KvK 54496462</div>
+</div>
+
+<div class="container">
+
+  <nav class="toc">
+    <div class="toc-title">Table of Contents</div>
+    <ol>
+      <li><a href="#s1">Who are we?</a></li>
+      <li><a href="#s2">What is GoddessGrounded for?</a></li>
+      <li><a href="#s3">What data do we process?</a></li>
+      <li><a href="#s4">Why do we process your data?</a></li>
+      <li><a href="#s5">How long do we retain your data?</a></li>
+      <li><a href="#s6">Who do we share your data with?</a></li>
+      <li><a href="#s7">Data outside the EU</a></li>
+      <li><a href="#s8">Security</a></li>
+      <li><a href="#s9">Your rights</a></li>
+      <li><a href="#s10">Cookies and tracking</a></li>
+      <li><a href="#s11">Future partner link</a></li>
+      <li><a href="#s12">Minors</a></li>
+      <li><a href="#s13">Changes</a></li>
+      <li><a href="#s14">Contact</a></li>
+      <li><a href="#s15">International users</a></li>
+    </ol>
+  </nav>
+
+  <!-- 1 -->
+  <section id="s1">
+    <h2><span class="section-num">1.</span> Who are we?</h2>
+    <p>GoddessGrounded is a digital companion app for women in relationships, helping them stay connected to themselves and, from there, to a grounded relationship. GoddessGrounded is a trade name operated under the same sole proprietorship as GoddessAlert, registered with the Dutch Chamber of Commerce under number <strong>54496462</strong>.</p>
+    <div class="highlight">
+      <strong>Contact details</strong><br>
+      GoddessGrounded &nbsp;·&nbsp; KvK 54496462<br>
+      <a href="mailto:hello@goddessalert.com">hello@goddessalert.com</a> &nbsp;·&nbsp;
+      <a href="https://goddessgrounded.app">goddessgrounded.app</a><br><br>
+      For privacy-related questions: <a href="mailto:privacy@goddessalert.com">privacy@goddessalert.com</a>
+    </div>
+    <div class="sister-note">
+      <strong>Sister app:</strong> GoddessGrounded and <a href="https://goddessalert.com">GoddessAlert</a> are both operated under KvK 54496462. They are separate applications with separate databases. Data is never shared between the two apps without explicit consent from both users.
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section id="s2">
+    <h2><span class="section-num">2.</span> What is GoddessGrounded for?</h2>
+    <p>GoddessGrounded is a private application for women in relationships. You use it to:</p>
+    <ul>
+      <li>Complete a self-assessment across six personal dimensions</li>
+      <li>Set a daily intention for yourself</li>
+      <li>Reflect on your needs and boundaries</li>
+      <li>Receive daily tips based on your personal profile</li>
+      <li>Track your Groundedness Score over time</li>
+    </ul>
+    <div class="highlight">
+      <strong>Important:</strong> GoddessGrounded processes data about you — not about your partner or third parties. The app is designed to support your own self-awareness and wellbeing within your relationship.
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section id="s3">
+    <h2><span class="section-num">3.</span> What data do we process?</h2>
+
+    <h3>3.1 Your account data</h3>
+    <p><strong>Account data:</strong> email address, registration date, language preference.</p>
+    <p><strong>Waitlist data:</strong> email address submitted via the waitlist form on goddessgrounded.app, used solely to notify you of the app launch.</p>
+
+    <h3>3.2 Your personal data</h3>
+    <p><strong>Assessment data:</strong> your responses to the self-assessment across six dimensions — self-connection, self-awareness, naming needs, boundaries, identity, and presence.</p>
+    <p><strong>Daily data:</strong> intentions set, reflections recorded, tips viewed and rated, check-in responses.</p>
+    <p><strong>Usage data:</strong> login times, session length, feature usage, Groundedness Score history.</p>
+
+    <h3>3.3 What we do not process</h3>
+    <p>GoddessGrounded does not process data about your partner or other third parties. We do not process financial data (GoddessGrounded is free), health data as defined under Article 9 GDPR, or location data.</p>
+  </section>
+
+  <!-- 4 -->
+  <section id="s4">
+    <h2><span class="section-num">4.</span> Why do we process your data?</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Purpose</th><th>Legal basis</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Providing access via magic link login</td><td>Performance of contract</td></tr>
+          <tr><td>Sending daily tips and reflections</td><td>Performance of contract</td></tr>
+          <tr><td>Personalising tips based on assessment profile</td><td>Performance of contract</td></tr>
+          <tr><td>Calculating and displaying Groundedness Score</td><td>Performance of contract</td></tr>
+          <tr><td>Sending onboarding and notification emails</td><td>Performance of contract</td></tr>
+          <tr><td>Notifying waitlist subscribers of launch</td><td>Consent</td></tr>
+          <tr><td>Improving tip library based on ratings</td><td>Legitimate interest</td></tr>
+          <tr><td>Analysing usage patterns for product development</td><td>Legitimate interest</td></tr>
+          <tr><td>Sending marketing communications</td><td>Consent</td></tr>
+          <tr><td>Complying with legal obligations</td><td>Legal obligation</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section id="s5">
+    <h2><span class="section-num">5.</span> How long do we retain your data?</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Data</th><th>Retention period</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Account data</td><td>While your account is active + 30 days after deletion</td></tr>
+          <tr><td>Assessment and reflection data</td><td>While your account is active</td></tr>
+          <tr><td>Usage data and tip ratings</td><td>Anonymised after 2 years</td></tr>
+          <tr><td>Waitlist email addresses</td><td>Until app launch or until you unsubscribe</td></tr>
+          <tr><td>Email communications</td><td>1 year after last contact</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>After the retention period, data is permanently and irreversibly deleted or anonymised.</p>
+  </section>
+
+  <!-- 6 -->
+  <section id="s6">
+    <h2><span class="section-num">6.</span> Who do we share your data with?</h2>
+    <p>GoddessGrounded never sells your data to third parties. We share data only with processors who process data on our behalf:</p>
+    <ul>
+      <li><strong>Supabase</strong> — database hosting and storage (EU servers)</li>
+      <li><strong>Vercel</strong> — web application hosting</li>
+      <li><strong>Resend</strong> — email notifications</li>
+      <li><strong>Anthropic (Claude API)</strong> — AI processing for personalised tips and content</li>
+    </ul>
+    <p>All processors are bound by data processing agreements and process data in accordance with GDPR. We may provide data to government authorities if legally required to do so.</p>
+    <p>GoddessGrounded does not use Stripe — the app is free and no payment data is processed.</p>
+  </section>
+
+  <!-- 7 -->
+  <section id="s7">
+    <h2><span class="section-num">7.</span> Is data processed outside the EU?</h2>
+    <p>Some of our processors are located outside the European Economic Area (EEA). In such cases, we ensure an adequate level of protection through the use of European Commission-approved standard contractual clauses (SCCs) and recognised certification schemes.</p>
+  </section>
+
+  <!-- 8 -->
+  <section id="s8">
+    <h2><span class="section-num">8.</span> Security of your data</h2>
+    <p><strong>Technical measures:</strong> encryption of data at rest and in transit (HTTPS), Row Level Security ensuring each user can only access their own data, magic link authentication without stored passwords, and regular security audits.</p>
+    <p><strong>Organisational measures:</strong> minimal data access, confidentiality obligations, and an incident procedure for data breaches in accordance with GDPR requirements.</p>
+    <p>In the event of a data breach likely to affect your rights and freedoms, we will notify you within 72 hours in accordance with Article 34 GDPR.</p>
+  </section>
+
+  <!-- 9 -->
+  <section id="s9">
+    <h2><span class="section-num">9.</span> Your rights</h2>
+    <div class="rights-grid">
+      <div class="right-card">
+        <div class="right-title">Access · Art. 15</div>
+        <p>Request what data we process about you.</p>
+      </div>
+      <div class="right-card">
+        <div class="right-title">Rectification · Art. 16</div>
+        <p>Have incorrect data corrected.</p>
+      </div>
+      <div class="right-card">
+        <div class="right-title">Erasure · Art. 17</div>
+        <p>Request deletion of all your data.</p>
+      </div>
+      <div class="right-card">
+        <div class="right-title">Restriction · Art. 18</div>
+        <p>Request that processing of your data be restricted.</p>
+      </div>
+      <div class="right-card">
+        <div class="right-title">Portability · Art. 20</div>
+        <p>Request your data in a structured, machine-readable format.</p>
+      </div>
+      <div class="right-card">
+        <div class="right-title">Objection · Art. 21</div>
+        <p>Object to processing based on legitimate interest.</p>
+      </div>
+    </div>
+    <p>Send an email to <a href="mailto:privacy@goddessalert.com">privacy@goddessalert.com</a>. We will respond within 30 days. You have the right to lodge a complaint with the <a href="https://autoriteitpersoonsgegevens.nl" target="_blank">Dutch Data Protection Authority</a>.</p>
+  </section>
+
+  <!-- 10 -->
+  <section id="s10">
+    <h2><span class="section-num">10.</span> Cookies and tracking</h2>
+    <p><strong>Functional cookies (necessary):</strong> session management for logged-in users and language preference.</p>
+    <p><strong>Analytical cookies (anonymised):</strong> general usage behaviour for product development, without personal tracking.</p>
+    <p>We do not use advertising cookies and do not share data with advertising networks.</p>
+  </section>
+
+  <!-- 11 -->
+  <section id="s11">
+    <h2><span class="section-num">11.</span> Future partner link with GoddessAlert</h2>
+    <div class="future-highlight">
+      <strong>Future feature — not yet active</strong>
+      In a future version of GoddessGrounded, users will have the option to voluntarily link their account with a GoddessAlert account. This link is always opt-in, requires explicit consent from both users, and can be revoked at any time. Only data that both users have explicitly agreed to share will be exchanged. This privacy policy will be updated before this feature is activated.
+    </div>
+    <p>When the partner link becomes available, the following principles will apply:</p>
+    <ul>
+      <li>Both users must give explicit, separate consent before any data is shared</li>
+      <li>Each user controls what they share — consent is granular, not all-or-nothing</li>
+      <li>Consent can be withdrawn at any time, immediately stopping all data exchange</li>
+      <li>Only the minimum data necessary for the feature will be shared</li>
+      <li>Every data transfer will be logged for transparency and AVG compliance</li>
+    </ul>
+  </section>
+
+  <!-- 12 -->
+  <section id="s12">
+    <h2><span class="section-num">12.</span> Minors</h2>
+    <p>GoddessGrounded is intended exclusively for persons aged 18 and over. We do not knowingly process data of minors. If we establish that data of a minor has been processed, we will delete it immediately.</p>
+  </section>
+
+  <!-- 13 -->
+  <section id="s13">
+    <h2><span class="section-num">13.</span> Changes to this Privacy Policy</h2>
+    <p>We may periodically update this Privacy Policy. For material changes, we will notify you by email or via a notification in the app. The date of the last update is stated at the top of this document.</p>
+    <p>Continued use of GoddessGrounded after a change constitutes acceptance of the updated Privacy Policy.</p>
+  </section>
+
+  <!-- 14 -->
+  <section id="s14">
+    <h2><span class="section-num">14.</span> Contact</h2>
+    <div class="contact-block">
+      <h3>Get in touch</h3>
+      <p>For questions about this Privacy Policy or the processing of your data:</p>
+      <p>📧 <a href="mailto:privacy@goddessalert.com">privacy@goddessalert.com</a></p>
+      <p>For general questions: <a href="mailto:hello@goddessalert.com">hello@goddessalert.com</a></p>
+      <p style="margin-top:16px; font-size:13px; color:rgba(250,247,242,0.4);">GoddessGrounded &nbsp;·&nbsp; KvK 54496462 &nbsp;·&nbsp; goddessgrounded.app</p>
+    </div>
+  </section>
+
+  <!-- 15 -->
+  <section id="s15">
+    <h2><span class="section-num">15.</span> Additional provisions for international users</h2>
+
+    <div class="intl-section">
+      <h3><span class="intl-flag">🇺🇸</span> California — CCPA/CPRA</h3>
+      <p>California residents have additional rights: the right to know, the right to deletion, the right to correction, and the right to opt out of the sale or sharing of data. <strong>GoddessGrounded does not sell personal data.</strong> For a California Privacy Request: <a href="mailto:privacy@goddessalert.com">privacy@goddessalert.com</a> (state "California Privacy Request", response within 45 days).</p>
+    </div>
+
+    <div class="intl-section">
+      <h3><span class="intl-flag">🇸🇬</span> Singapore — PDPA</h3>
+      <p>GoddessGrounded processes personal data of Singapore users in accordance with the Personal Data Protection Act 2012. Your consent may be withdrawn at any time via <a href="mailto:privacy@goddessalert.com">privacy@goddessalert.com</a>.</p>
+    </div>
+
+    <div class="intl-section">
+      <h3><span class="intl-flag">🇯🇵</span> Japan — APPI</h3>
+      <p>GoddessGrounded processes personal data of Japanese users in accordance with the Act on Protection of Personal Information. Data is not used for purposes other than those described in this policy. Access and correction requests: <a href="mailto:privacy@goddessalert.com">privacy@goddessalert.com</a>.</p>
+    </div>
+
+    <div class="intl-section">
+      <h3><span class="intl-flag">🇰🇷</span> South Korea — PIPA</h3>
+      <p>GoddessGrounded processes personal data of Korean users in accordance with the Personal Information Protection Act. Korean users provide explicit consent upon registration. For questions: <a href="mailto:privacy@goddessalert.com">privacy@goddessalert.com</a>.</p>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2026 GoddessGrounded &nbsp;·&nbsp; KvK 54496462 &nbsp;·&nbsp;
+  <a href="https://goddessgrounded.app/privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+  <a href="https://goddessalert.com">GoddessAlert</a>
+  </p>
+  <p style="margin-top:8px;">Privacy Policy v1.0 — May 2026</p>
+</footer>
+
+</body>
+</html>
