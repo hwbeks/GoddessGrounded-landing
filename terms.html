@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Use — GoddessGrounded</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream: #faf7f2;
+      --warm: #f2ece0;
+      --earth: #8b6f47;
+      --earth-light: #b89468;
+      --earth-dark: #5c4a30;
+      --bark: #3d2f1e;
+      --muted: #9e8e7a;
+      --text: #2c1f0e;
+      --border: #e2d8cc;
+      --card: #ffffff;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--cream);
+      color: var(--text);
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    header {
+      background: var(--bark);
+      padding: 28px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 300;
+      color: var(--earth-light);
+      letter-spacing: 0.12em;
+      text-decoration: none;
+    }
+
+    .logo span {
+      color: rgba(255,255,255,0.4);
+      font-size: 13px;
+      font-family: 'Jost', sans-serif;
+      letter-spacing: 0.05em;
+      margin-left: 16px;
+      font-weight: 300;
+    }
+
+    .hero {
+      background: var(--bark);
+      padding: 60px 40px 50px;
+      text-align: center;
+      border-bottom: 1px solid rgba(139,111,71,0.25);
+    }
+
+    .hero-label {
+      font-family: 'Jost', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--earth-light);
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(36px, 5vw, 52px);
+      font-weight: 300;
+      color: var(--cream);
+      letter-spacing: 0.02em;
+      margin-bottom: 16px;
+    }
+
+    .hero-meta {
+      font-size: 13px;
+      color: rgba(255,255,255,0.4);
+      letter-spacing: 0.05em;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 64px 40px 100px;
+    }
+
+    .toc {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--earth);
+      padding: 28px 32px;
+      margin-bottom: 56px;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .toc-title {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--earth-dark);
+      margin-bottom: 16px;
+    }
+
+    .toc ol {
+      list-style: none;
+      counter-reset: toc;
+      columns: 2;
+      gap: 0 32px;
+    }
+
+    @media (max-width: 560px) { .toc ol { columns: 1; } }
+
+    .toc li {
+      counter-increment: toc;
+      margin-bottom: 8px;
+      font-size: 13.5px;
+    }
+
+    .toc li a {
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .toc li a:hover { color: var(--earth-dark); }
+
+    section {
+      margin-bottom: 52px;
+      padding-top: 8px;
+    }
+
+    section + section {
+      border-top: 1px solid var(--border);
+      padding-top: 52px;
+    }
+
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 26px;
+      font-weight: 400;
+      color: var(--text);
+      margin-bottom: 20px;
+      letter-spacing: 0.01em;
+    }
+
+    h2 .section-num {
+      color: var(--earth);
+      font-style: italic;
+      margin-right: 10px;
+    }
+
+    h3 {
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--earth-dark);
+      margin: 28px 0 12px;
+    }
+
+    p { margin-bottom: 16px; color: #3a3530; }
+    p:last-child { margin-bottom: 0; }
+
+    strong { font-weight: 500; color: var(--text); }
+
+    ul, ol {
+      margin: 12px 0 16px 20px;
+      color: #3a3530;
+    }
+
+    li { margin-bottom: 6px; }
+
+    a { color: var(--earth-dark); }
+    a:hover { color: var(--earth); }
+
+    .highlight {
+      background: var(--card);
+      border-left: 3px solid var(--earth);
+      padding: 18px 22px;
+      margin: 20px 0;
+      font-size: 14.5px;
+      color: var(--muted);
+      border-radius: 0 4px 4px 0;
+    }
+
+    .highlight.warning {
+      border-left-color: #c0392b;
+      background: #fff8f8;
+    }
+
+    .highlight.warning strong { color: #c0392b; }
+
+    .future-highlight {
+      background: rgba(139,111,71,0.06);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--earth-light);
+      padding: 18px 22px;
+      margin: 20px 0;
+      font-size: 14.5px;
+      color: var(--muted);
+      border-radius: 0 4px 4px 0;
+    }
+
+    .future-highlight strong {
+      color: var(--earth-dark);
+      display: block;
+      margin-bottom: 8px;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .free-badge {
+      display: inline-block;
+      background: rgba(139,111,71,0.1);
+      border: 1px solid var(--earth-light);
+      color: var(--earth-dark);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 2px;
+      margin-bottom: 20px;
+    }
+
+    .sister-note {
+      background: var(--warm);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 20px 24px;
+      margin: 20px 0;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .sister-note strong { color: var(--earth-dark); }
+
+    .contact-block {
+      background: var(--bark);
+      color: var(--cream);
+      padding: 36px 40px;
+      border-radius: 4px;
+      margin-top: 40px;
+    }
+
+    .contact-block h3 {
+      color: var(--earth-light);
+      margin-top: 0;
+      margin-bottom: 16px;
+      font-size: 12px;
+      letter-spacing: 0.18em;
+    }
+
+    .contact-block p { color: rgba(250,247,242,0.7); margin-bottom: 8px; }
+    .contact-block a { color: var(--earth-light); text-decoration: none; }
+    .contact-block a:hover { color: var(--cream); }
+
+    footer {
+      background: var(--bark);
+      padding: 28px 40px;
+      text-align: center;
+      font-size: 12px;
+      color: rgba(250,247,242,0.35);
+      letter-spacing: 0.06em;
+    }
+
+    footer a { color: var(--earth-light); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      header, .hero { padding-left: 24px; padding-right: 24px; }
+      .container { padding: 48px 24px 80px; }
+      .contact-block { padding: 28px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="https://goddessgrounded.app" class="logo">GoddessGrounded <span>goddessgrounded.app</span></a>
+</header>
+
+<div class="hero">
+  <div class="hero-label">Legal information</div>
+  <h1>Terms of Use</h1>
+  <div class="hero-meta">Version 1.0 &nbsp;·&nbsp; Last updated: May 2026 &nbsp;·&nbsp; KvK 54496462</div>
+</div>
+
+<div class="container">
+
+  <nav class="toc">
+    <div class="toc-title">Table of Contents</div>
+    <ol>
+      <li><a href="#s1">About GoddessGrounded</a></li>
+      <li><a href="#s2">Access and use</a></li>
+      <li><a href="#s3">Account</a></li>
+      <li><a href="#s4">Free service</a></li>
+      <li><a href="#s5">Waitlist</a></li>
+      <li><a href="#s6">Your responsibilities</a></li>
+      <li><a href="#s7">AI tips and content</a></li>
+      <li><a href="#s8">Future partner link</a></li>
+      <li><a href="#s9">Intellectual property</a></li>
+      <li><a href="#s10">Service availability</a></li>
+      <li><a href="#s11">Liability</a></li>
+      <li><a href="#s12">Changes</a></li>
+      <li><a href="#s13">Governing law</a></li>
+      <li><a href="#s14">Contact</a></li>
+    </ol>
+  </nav>
+
+  <!-- 1 -->
+  <section id="s1">
+    <h2><span class="section-num">1.</span> About GoddessGrounded</h2>
+    <p>GoddessGrounded is a daily companion app for women in relationships, helping them stay connected to themselves — and from there, to a grounded relationship. GoddessGrounded is a trade name operated under the same sole proprietorship as GoddessAlert, registered with the Dutch Chamber of Commerce under number <strong>54496462</strong>.</p>
+    <p>By using GoddessGrounded, you agree to these Terms of Use. Please read them carefully before using the service.</p>
+    <div class="highlight">
+      By registering or using the app, you confirm that you have read, understood, and accepted these terms.
+    </div>
+    <div class="sister-note">
+      <strong>Sister app:</strong> GoddessGrounded and <a href="https://goddessalert.com">GoddessAlert</a> are both operated under KvK 54496462. They are separate applications with separate databases. No data is shared between the two apps without explicit consent from both users.
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section id="s2">
+    <h2><span class="section-num">2.</span> Access and use</h2>
+    <p>GoddessGrounded is intended exclusively for:</p>
+    <ul>
+      <li>Persons aged <strong>18 and over</strong></li>
+      <li><strong>Personal use</strong> by the registered user</li>
+      <li>Use consistent with the purpose of the service: supporting self-awareness and personal grounding within relationships</li>
+    </ul>
+    <div class="highlight warning">
+      <strong>Not permitted:</strong> GoddessGrounded may not be used in ways that harm the privacy or wellbeing of others. The app is designed for personal self-reflection and may not be shared with or used on behalf of third parties.
+    </div>
+    <p>GoddessGrounded reserves the right to terminate accounts in cases of misuse or use contrary to these terms.</p>
+  </section>
+
+  <!-- 3 -->
+  <section id="s3">
+    <h2><span class="section-num">3.</span> Account</h2>
+    <p>You create an account with your email address. Access is provided via a magic link — no password is stored. You are responsible for the confidentiality of your login credentials and for all activities that take place through your account.</p>
+    <p>You can delete your account at any time through the app settings. Upon deletion, all your data will be permanently erased in accordance with our <a href="/privacy.html">Privacy Policy</a>.</p>
+  </section>
+
+  <!-- 4 -->
+  <section id="s4">
+    <h2><span class="section-num">4.</span> Free service</h2>
+    <div class="free-badge">Free · Always</div>
+    <p>GoddessGrounded is and will remain completely free to use. There are no subscription fees, no premium tiers, and no hidden costs. No credit card is ever required.</p>
+    <p>GoddessGrounded is funded through the commercial success of its sister app GoddessAlert, which donates 10% of profits to women's equality organisations and 10% to sustainability causes. GoddessGrounded is part of that mission.</p>
+    <div class="highlight">
+      GoddessGrounded will never charge you. If you are ever asked to pay, please contact us immediately at <a href="mailto:hello@goddessalert.com">hello@goddessalert.com</a>.
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section id="s5">
+    <h2><span class="section-num">5.</span> Waitlist</h2>
+    <p>Before the app launches, you can join the waitlist by submitting your email address on goddessgrounded.app. By joining the waitlist:</p>
+    <ul>
+      <li>You consent to receiving a one-time launch notification email</li>
+      <li>Your email address is not used for any other purpose without your explicit consent</li>
+      <li>You can unsubscribe from the waitlist at any time by contacting <a href="mailto:hello@goddessalert.com">hello@goddessalert.com</a></li>
+    </ul>
+  </section>
+
+  <!-- 6 -->
+  <section id="s6">
+    <h2><span class="section-num">6.</span> Your responsibilities</h2>
+    <p>As a user of GoddessGrounded, you are responsible for:</p>
+    <ul>
+      <li>Using the app honestly and in good faith for personal self-reflection</li>
+      <li>Not sharing your account with third parties</li>
+      <li>Using the app in accordance with its intended purpose: supporting your own awareness and wellbeing within your relationship</li>
+    </ul>
+    <p>GoddessGrounded is a tool for personal growth. Responsibility for your behaviour and choices in your relationships remains yours at all times.</p>
+  </section>
+
+  <!-- 7 -->
+  <section id="s7">
+    <h2><span class="section-num">7.</span> AI tips and content</h2>
+    <p>GoddessGrounded uses AI technology (Anthropic Claude API) to personalise daily tips and reflection prompts. The following applies:</p>
+    <ul>
+      <li>Tips are <strong>suggestions</strong>, not guarantees of results</li>
+      <li>Tips do not constitute professional psychological, therapeutic, or medical advice</li>
+      <li>GoddessGrounded is not a substitute for professional relationship therapy or mental health support</li>
+      <li>The quality of tips may vary — use your own judgement and intuition</li>
+    </ul>
+    <div class="highlight">
+      For serious personal or relationship difficulties, we encourage you to seek professional support. GoddessGrounded is a daily companion, not a clinical intervention.
+    </div>
+  </section>
+
+  <!-- 8 -->
+  <section id="s8">
+    <h2><span class="section-num">8.</span> Future partner link with GoddessAlert</h2>
+    <div class="future-highlight">
+      <strong>Future feature — not yet active</strong>
+      In a future version, GoddessGrounded users will have the option to voluntarily link their account with a GoddessAlert account. This feature is always opt-in, requires explicit consent from both users, and can be revoked at any time.
+    </div>
+    <p>When this feature becomes available, separate and updated terms will apply to the linked functionality. You will be informed in advance and asked for explicit consent before any data is shared between the two apps.</p>
+    <p>You are under no obligation to use the partner link feature. GoddessGrounded remains fully functional as a standalone app.</p>
+  </section>
+
+  <!-- 9 -->
+  <section id="s9">
+    <h2><span class="section-num">9.</span> Intellectual property</h2>
+    <p>All content, designs, texts, software, and other materials of GoddessGrounded are the property of GoddessGrounded and protected by intellectual property rights. It is not permitted to copy, distribute, or commercially use GoddessGrounded content without prior written consent.</p>
+    <p>Personal reflections, intentions, and other data you enter remain your own. You grant GoddessGrounded a limited licence to process this data solely for the purpose of providing the service.</p>
+  </section>
+
+  <!-- 10 -->
+  <section id="s10">
+    <h2><span class="section-num">10.</span> Service availability</h2>
+    <p>GoddessGrounded aims for high platform availability but does not guarantee uninterrupted access. The service may be temporarily unavailable due to maintenance, updates, or circumstances beyond our control.</p>
+    <p>GoddessGrounded reserves the right to modify, expand, or discontinue the service at any time. In the event of discontinuation, registered users will be notified by email at least 30 days in advance.</p>
+  </section>
+
+  <!-- 11 -->
+  <section id="s11">
+    <h2><span class="section-num">11.</span> Liability</h2>
+    <p>GoddessGrounded is not liable for:</p>
+    <ul>
+      <li>Indirect damage, consequential damage, or emotional distress resulting from use of the app</li>
+      <li>Damage resulting from temporary unavailability of the service</li>
+      <li>Results or outcomes from the use of tips, reflections, or recommendations</li>
+      <li>Decisions made based on content provided by the app</li>
+    </ul>
+    <p>Because GoddessGrounded is a free service, liability is in all cases limited to the maximum extent permitted by applicable law. This limitation does not apply in cases of intent or gross negligence by GoddessGrounded.</p>
+  </section>
+
+  <!-- 12 -->
+  <section id="s12">
+    <h2><span class="section-num">12.</span> Changes to these terms</h2>
+    <p>GoddessGrounded may periodically update these Terms of Use. For material changes, registered users will be notified by email at least 14 days in advance.</p>
+    <p>Continued use of GoddessGrounded after the effective date of updated terms constitutes acceptance of the new terms. If you do not agree, you may delete your account at any time.</p>
+  </section>
+
+  <!-- 13 -->
+  <section id="s13">
+    <h2><span class="section-num">13.</span> Governing law and disputes</h2>
+    <p>These Terms of Use are governed by <strong>Dutch law</strong>. Disputes are preferably resolved through mutual consultation. If this is not possible, the competent court in the Netherlands has exclusive jurisdiction.</p>
+    <p>As a consumer, you also have the option to submit a dispute to the <a href="https://www.degeschillencommissie.nl" target="_blank">Dutch Disputes Committee</a> or via the <a href="https://ec.europa.eu/consumers/odr" target="_blank">ODR platform of the European Commission</a>.</p>
+  </section>
+
+  <!-- 14 -->
+  <section id="s14">
+    <h2><span class="section-num">14.</span> Contact</h2>
+    <div class="contact-block">
+      <h3>Questions about these terms?</h3>
+      <p>For questions about these Terms of Use or GoddessGrounded in general:</p>
+      <p>📧 <a href="mailto:hello@goddessalert.com">hello@goddessalert.com</a></p>
+      <p>For privacy-related questions: <a href="mailto:privacy@goddessalert.com">privacy@goddessalert.com</a></p>
+      <p style="margin-top:16px; font-size:13px; color:rgba(250,247,242,0.4);">GoddessGrounded &nbsp;·&nbsp; KvK 54496462 &nbsp;·&nbsp; goddessgrounded.app</p>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2026 GoddessGrounded &nbsp;·&nbsp; KvK 54496462 &nbsp;·&nbsp;
+  <a href="https://goddessgrounded.app/privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+  <a href="https://goddessgrounded.app/terms.html">Terms of Use</a> &nbsp;·&nbsp;
+  <a href="https://goddessalert.com">GoddessAlert</a>
+  </p>
+  <p style="margin-top:8px;">Terms of Use v1.0 — May 2026</p>
+</footer>
+
+</body>
+</html>
